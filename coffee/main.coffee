@@ -37,7 +37,7 @@ update = =>
 		playerDead()
 
 	ceiling = $("#ceiling")
-	pos = 5  if top < 46
+	pos = 0 if top < ceiling.offset().top + ceiling.height()
 	return unless pipes[0]?
 	pipe = pipes[0]
 	topPipe = pipe.children(".pipe_upper")
