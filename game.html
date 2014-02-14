@@ -1,0 +1,34 @@
+<html>
+   <head>
+      <link href="css/reset.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   </head>
+   <body>
+      <div id="game">
+         <div id="viewport">
+            <div id="background" class="animated">
+               <div id="stage">
+                  <div id="player" class="bird animated"></div>
+                  <div id="ceiling" class="animated"></div>
+                  <div id="score"></div>
+                  <div id="title"></div>
+                  <div id="scoreboard">
+                     <div id="medal"><img src="assets/medal_gold.png" alt="gold"></div>
+                     <div id="currentscore"><img src="assets/font_small_1.png" alt="1"><img src="assets/font_small_1.png" alt="1"></div>
+                     <div id="highscore"><img src="assets/font_small_9.png" alt="9"><img src="assets/font_small_9.png" alt="9"></div>
+                     <div id="replay"><img src="assets/replay.png" alt="replay"></div>
+                  </div>
+               </div>
+            </div>
+            <div id="land" class="animated"></div>
+         </div>
+      </div>
+   <div class="boundingbox" id="playerbox"></div>
+   <div class="boundingbox" id="pipebox"></div>
+   </body>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/jquery.transit.min.js"></script>
+   <script src="js/jquery.rot.min.js"></script>
+   <script src="js/main.js"></script>
+</html>
