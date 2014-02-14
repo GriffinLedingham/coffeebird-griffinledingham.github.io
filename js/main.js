@@ -53,8 +53,8 @@ update = function() {
     playerDead();
   }
   ceiling = $("#ceiling");
-  if (top < 46) {
-    pos = 5;
+  if (top < ceiling.offset().top + ceiling.height()) {
+    pos = 0;
   }
   if (pipes[0] == null) {
     return;
